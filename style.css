@@ -124,11 +124,14 @@ span{
 }
 .home-img img{
     position: relative;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid #7aa187;
+    width: 31vw;
+    border-radius: 20%;
+    box-shadow: 0 0 25px var(#7aa187);
     cursor: pointer;
     transition: 0.2s linear;
+    border: 0.3rem solid #3d5341;
+    
+    
 }
 .home-img img:hover{
     font-size: 1.8rem;
@@ -182,27 +185,19 @@ span{
     position: relative;
 }
 .typing-text span::before{
-    content: "software Developer";
+    content: "";
     color: #39774d;
     animation: words 20s infinite;
 }
 
 @keyframes words{
-    0%, 20%{
-        content: "คนน่ารัก";
+    0%, 50%{
+        content: "HTML";
     }
-    21%, 40%{
-        content: "คนหล่อ";
+    21%, 100%{
+        content: "CSS";
     }
-    41%, 60%{
-        content: "คนดี";
-    }
-    61%, 80%{
-        content: "คนไทย";
-    }
-    81%, 100%{
-        content: "คนละคน";
-    }
+ 
 }
 @media (max-width: 1000px){
     .home{
@@ -229,4 +224,12 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.cm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1cm;
+    
 }
